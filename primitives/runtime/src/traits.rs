@@ -225,6 +225,15 @@ impl<T> Convert<T, T> for Identity {
 	fn convert(a: T) -> T { a }
 }
 
+/// Simple trait similar to `Into`, except that it can be used to convert numerics between each
+/// other.
+pub trait As<T> {
+	/// Convert forward (ala `Into::into`).
+	fn as_(self) -> T;
+	/// Convert backward (ala `From::from`).
+	fn sa(_: T) -> Self;
+}
+
 /// A structure that performs standard conversion using the standard Rust conversion traits.
 pub struct ConvertInto;
 impl<A, B: From<A>> Convert<A, B> for ConvertInto {

@@ -1091,6 +1091,17 @@ checksum = "fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10"
 [[package]]
 name = "ed25519-dalek"
 version = "1.0.0-pre.3"
+source = "git+https://github.com/usetech-llc/ed25519-dalek?tag=1.0.0-pre.3#29a06e494ddd4f370256596b7103125295073435"
+dependencies = [
+ "clear_on_drop",
+ "curve25519-dalek",
+ "rand 0.7.3",
+ "sha2",
+]
+
+[[package]]
+name = "ed25519-dalek"
+version = "1.0.0-pre.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "978710b352437433c97b2bff193f2fb1dfd58a093f863dd95e225a19baa599a2"
 dependencies = [
@@ -2634,7 +2645,7 @@ checksum = "80a6000296bdbff540b6c00ef82108ef23aa68d195b9333823ea491562c338d7"
 dependencies = [
  "asn1_der",
  "bs58",
- "ed25519-dalek",
+ "ed25519-dalek 1.0.0-pre.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "either",
  "fnv",
  "futures 0.3.4",
@@ -7507,7 +7518,7 @@ dependencies = [
  "byteorder",
  "criterion 0.2.11",
  "derive_more",
- "ed25519-dalek",
+ "ed25519-dalek 1.0.0-pre.3 (git+https://github.com/usetech-llc/ed25519-dalek?tag=1.0.0-pre.3)",
  "futures 0.3.4",
  "hash-db",
  "hash256-std-hasher",

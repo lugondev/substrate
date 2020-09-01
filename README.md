@@ -7,10 +7,19 @@
 
 Substrate is a next-generation framework for blockchain innovation 🚀.
 
+## Install
+
+```shell script
+# recommend
+rustup install nightly-2020-05-15
+rustup override set nightly-2020-05-15
+rustup target add wasm32-unknown-unknown --toolchain nightly-2020-05-15
+```
+
 ## Trying it out
 
-Simply go to [substrate.dev](https://substrate.dev) and follow the 
-[installation](https://substrate.dev/docs/en/knowledgebase/getting-started/) instructions. You can 
+Simply go to [substrate.dev](https://substrate.dev) and follow the
+[installation](https://substrate.dev/docs/en/knowledgebase/getting-started/) instructions. You can
 also try out one of the [tutorials](https://substrate.dev/en/tutorials).
 
 ## Contributions & Code of Conduct
